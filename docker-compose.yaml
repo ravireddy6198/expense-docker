@@ -1,0 +1,52 @@
+networks:
+  expense:{}
+volumes:
+  mysql:
+services:
+  mysql:
+    image:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Your Volumes Configuration
+# yaml
+# Copy
+# Edit
+# volumes:
+#   - mysql:/var/lib/mysql
+# This line does the following:
+
+# Defines a named volume (mysql)
+
+# mysql is a named volume managed by Docker.
+# It is used to persist database data.
+# Mounts the volume to a specific directory (/var/lib/mysql) inside the container
+
+# /var/lib/mysql is the default location where MySQL stores its database files.
+# By mapping this directory to the named volume mysql, all MySQL data will be stored outside the container.
+# This means the data is not lost if the container stops, crashes, or is removed.
