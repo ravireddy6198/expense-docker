@@ -1,6 +1,6 @@
 FROM node:20.18.3-alpine3.21
-COPY package.json .
-COPY *.js .
+COPY package.json ./
+COPY *.js ./
 RUN npm install
 RUN addgroup -S expense && adduser -S expense -G expense && \
     mkdir /opt/backend && \
